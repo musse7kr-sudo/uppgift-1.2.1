@@ -1,10 +1,7 @@
-function toggleRuta() {
-  const ruta = document.getElementById("ruta");
-  const style = window.getComputedStyle(ruta); // kolla faktisk stil
+function visaRuta() {
+  document.getElementById("ruta").style.display = "block";
+}
 
-  if (style.display === "none") {
-    ruta.style.display = "block"; // gör synlig
-  } else {
-    ruta.style.display = "none";  // gör osynlig
-  }
+function gomRuta() {
+  document.getElementById("ruta").style.display = "none";
 }
